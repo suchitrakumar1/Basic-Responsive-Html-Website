@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .list-container {
+            width: 100%;
+            min-height: 10vh;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            align-items: center;
+            background-color: rgb(212, 231, 247);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .list-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            gap: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .name {
+            font-weight: normal;
+        }
+
+        .body-section {
+            /* min-height: 80vh; */
+        }
+
+        .section1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Fira Sans", sans-serif;
+            min-height: 15vh;
+        }
+
+        .slogan {
+            text-align: center;
+            /* margin-top: 100px; */
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        .section2 {
+            margin-top: 30px;
+        }
+
+        .table {
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Fira Sans", sans-serif;
+            background-color: rgb(231, 239, 239);
+        }
+
+        .review {
+            min-height: 5vh;
+            text-align: left;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Fira Sans", sans-serif;
+            /* margin-left: 50px; */
+            font-size: x-large;
+            font-weight: normal;
+        }
+
+        .section4 {
+            min-height: 25vh;
+            /* background-color: navy; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 40px;
+            flex-direction: row;
+        }
+
+        .box {
+            height: 180px;
+            width: 200px;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(221, 246, 235);
+            font-family: "Fira Sans", sans-serif;
+            border: 2px solid black;
+            font-weight: 400;
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .list-items {
+                display: none;
+            }
+
+            .section4{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+            }
+            .list-container{
+                width: 100vw;
+            }
+        
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="list-container">
+            <h1 class="name">Suchitra Kumar</h1>
+            <ul class="list-items">
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Articles</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="body-section">
+        <sec class="section1">
+            <h1 class="slogan">
+                Frontend Developer
+            </h1>
+            <p class="small-paragraph">
+                Html Only With Proper Layout
+            </p>
+        </sec>
+        <sec class="section2">
+            <table class="table" border="1" cellspacing="0px">
+                <tr>
+                    <td>Projects <br> Html Only Portfolio</td>
+                    <td rowspan="3">Work Experience <br> Roadmap.sh <br> Solved All The Frontend Projects </td>
+                    <td rowspan="6">
+                        Education <br>
+                        Graduated With 3.76 out of 4 <br> CGPA won acme Hackathon <br> Organised 30 Sessions.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calculator</td>
+                </tr>
+                <tr>
+                    <td>Quiz App</td>
+                </tr>
+                <tr>
+                    <td>Countdown Timer</td>
+                    <td rowspan="3">Opensource Work <br>
+                        Contributed To 50 Opensource <br>
+                        projects . Made my own Projects with <br>
+                        200 github Stars
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product Upcoming Page</td>
+                </tr>
+                <tr>
+                    <td>Single Page Cv</td>
+                </tr>
+
+            </table>
+            <sec class="sec3">
+                <h4 class="review">
+                    Reviews From My Teachers
+                </h4>
+            </sec>
+            <sec class="section4">
+                <div class="box box1">
+                    John doe was a brilliant <br> student; always stood out <br> with his assignments.
+
+                    Jane Doe <br>
+                    Assistant Professor
+
+                </div>
+                <div class="box box2">
+                    John doe was a brilliant <br> student; always stood out <br> with his assignments.
+
+                    Jane Doe <br>
+                    Assistant Professor
+
+                </div>
+                <div class="box box3">
+                    John doe was a brilliant <br> student; always stood out <br> with his assignments.
+
+                    Jane Doe <br>
+                    Assistant Professor
+                </div>
+            </sec>
+        </sec>
+    </div>
+</body>
+
+</html>
